@@ -3,259 +3,265 @@
 *,
 ::before,
 ::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html {
-  scroll-behavior: smooth;
-  --res: calc(0.01 * 10vmin);
+    scroll-behavior: smooth;
+    --res: calc(0.01 * 10vmin);
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  display: flex;
-  flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 li {
-  list-style-type: none;
+    list-style-type: none;
 }
 
 a {
-  text-decoration: none;
-  color: #fffae1;
+    text-decoration: none;
+    color: #fffae1;
 }
 
 /* ******************* NAVBAR ******************* */
 nav {
-  overflow: hidden;
-  background-color: #7f3b1e;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 60px;
-  border-bottom: 1px solid #fffae1;
+    overflow: hidden;
+    background-color: #7f3b1e;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #fffae1;
 }
 
 nav li {
-  font-family: "Shojumaru", cursive;
+    font-family: "Shojumaru", cursive;
 }
 
 nav li a {
-  display: inline-block;
-  font-weight: bolder;
-  line-height: 60px;
+    display: inline-block;
+    font-weight: bolder;
+    line-height: 60px;
 }
 
 nav li:nth-child(1) {
-  float: left;
-  font-size: 35px;
-  margin-left: 20px;
+    float: left;
+    font-size: 35px;
+    margin-left: 20px;
 }
 
 nav li:nth-child(2) {
-  float: right;
-  font-size: 30px;
-  margin-right: 20px;
+    float: right;
+    font-size: 30px;
+    margin-right: 20px;
 }
 
 /* ******************* img_titre ******************* */
 .img_titre {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: #bf7839;
-  margin-top: 60px;
-  width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Une colonne pour l'image et deux pour le titre */
+    background-color: #bf7839;
+    margin-top: 60px;
+    width: 100%;
 }
 
 .img {
-  width: 300px;
-  height: 220px;
-  background: url(source/bdc.jpg) no-repeat;
-  background-size: contain;
-  margin-top: 40px;
-  margin-left: 100px;
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
-    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-  border-radius: 10px;
+    width: 300px; /* Vous pouvez ajuster cette taille selon vos besoins */
+    height: 220px;
+    background: url(source/bdc.jpg) no-repeat;
+    background-size: contain;
+    justify-self: center;
+    align-self: center;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+        rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    border-radius: 10px;
 }
 
 .titre {
-  width: auto;
-  height: auto;
-  margin-left: 120px;
+    margin-left: 0px; /* Ajustez selon vos préférences */
 }
 
 h1 {
-  font-family: "Dancing Script", cursive;
-  text-align: center;
-  color: #0d0d0d;
-  font-size: calc(89 * var(--res));
-  margin: 20px 0;
-  font-weight: bolder;
+    font-family: "Dancing Script", cursive;
+    text-align: center;
+    color: #0d0d0d;
+    font-size: calc(89 * var(--res));
+    margin: 20px 0;
+    font-weight: bolder;
 }
 
 .premierTrait {
-  height: 1px;
-  width: 25%;
-  margin: -3px auto;
-  background-color: #fffae1;
+    height: 1px;
+    width: 25%;
+    margin: -3px auto;
+    background-color: #fffae1;
 }
 
 h3 {
-  font-family: "Dancing Script", cursive;
-  text-align: center;
-  color: #0d0d0d;
-  font-size: calc(60 * var(--res));
-  margin: 20px 0;
-  font-weight: bolder;
+    font-family: "Dancing Script", cursive;
+    text-align: center;
+    color: #0d0d0d;
+    font-size: calc(60 * var(--res));
+    margin: 20px 0;
+    font-weight: bolder;
 }
 
 /* *************** INFO IMPORTANTE ******************* */
 .infoimportante {
-  background-color: #ff0000;
-  padding: 30px 0;
-  width: 100%;
-  text-align: center;
-  font-size: calc(70 * var(--res));
-  font-weight: bolder;
-  line-height: 100px;
+    background-color: #ff0000;
+    padding: 30px 0;
+    width: 100%;
+    text-align: center;
+    font-size: calc(70 * var(--res));
+    font-weight: bolder;
+    line-height: 100px;
 }
 
 /* *************** info ouverture ******************** */
 .infoouverture {
-  background-color: #d99d55;
-  width: 100%;
-  padding: 30px 0;
+    background-color: #d99d55;
+    width: 100%;
+    padding: 30px 0;
 }
 
 .titre-heures-ouverture {
-  padding-bottom: 30px;
-  text-align: center;
-  width: 100%;
-  font-size: calc(80 * var(--res));
-  font-weight: bolder;
+    padding-bottom: 30px;
+    text-align: center;
+    width: 100%;
+    font-size: calc(80 * var(--res));
+    font-weight: bolder;
 }
 
 .horaire {
-  display: flex;
-  font-weight: bolder;
-  font-size: 30px;
-  margin-left: 25vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Trois colonnes de largeur égale */
+    gap: 0px; /* Espacement entre les éléments */
+    align-items: center;
+    font-weight: bolder;
+    font-size: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.jour {
+    padding: 20px;
+    border: 3px solid #7f3b1e;
+    text-align: center;
+    background: #bf7839;
+    border-radius: 20px;
+    margin-bottom: 30px; /* Ajout d'un espace entre les jours */
+}
+
+.horaire-info {
+    padding: 20px;
+    border: 3px solid #7f3b1e;
+    text-align: center;
+    background: #ceffce; /* Fond par défaut */
+    border-radius: 20px;
+    margin-bottom: 30px; /* Ajout d'un espace entre les jours */
+}
+
+/* Classe pour le fond rouge */
+.red-background {
+    background: #ffcccc; /* Rouge clair pour le fond */
 }
 
 /* ******************* FOOTER ******************** */
 footer {
-  flex-shrink: 0;
-  width: 100%;
-  background: #0d0d0d;
-  color: #f1f1f1;
-  /* grow shrink basis */ /*pour garder le footer toujours en bas */
-  flex: 1 0 auto;
+    flex-shrink: 0;
+    width: 100%;
+    background: #0d0d0d;
+    color: #f1f1f1;
+    flex: 1 0 auto;
 }
 
 .contenu-footer {
-  width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  font-size: 20px;
-  padding: 50px 0 50px;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 20px;
+    padding: 50px 0 50px;
 }
 
 .bloc {
-  width: 33%;
-  margin: 0 30px;
+    width: 33%;
+    margin: 0 30px;
 }
 
 .footer-adresse h2,
 .footer-contact h2,
 .footer-localisation h2 {
-  font-size: 30px;
-  padding-bottom: 20px;
-  list-style-type: none;
+    font-size: 30px;
+    padding-bottom: 20px;
+    list-style-type: none;
 }
 
 .contenu-footer li {
-  padding: 5px 0;
+    padding: 5px 0;
 }
 
 .deuxiemeTrait {
-  height: 1px;
-  width: 75%;
-  background-color: #fffae1;
-  margin: 0px auto 90px auto;
+    height: 1px;
+    width: 75%;
+    background-color: #fffae1;
+    margin: 0px auto 90px auto;
 }
 
 @media screen and (max-width: 1300px) {
-  .img {
-    margin-left: 0;
-  }
+    .contenu-footer {
+        width: 700px;
+        flex-wrap: wrap;
+    }
 
-  .titre {
-    margin-left: 20px;
-  }
+    .bloc {
+        width: 40%;
+        margin: 0 0;
+    }
 
-  .contenu-footer {
-    width: 700px;
-    flex-wrap: wrap;
-  }
-
-  .bloc {
-    width: 40%;
-    margin: 0 0;
-  }
-
-  .bloc:nth-child(1),
-  .bloc:nth-child(2) {
-    margin-bottom: 50px;
-  }
-
-  .horaire {
-    margin-left: 5vw;
-  }
+    .bloc:nth-child(1),
+    .bloc:nth-child(2) {
+        margin-bottom: 50px;
+    }
 }
 
 @media screen and (max-width: 800px) {
-  .img {
-    margin-left: 0;
-  }
+.img {
+    width: 205px; /* Vous pouvez ajuster cette taille selon vos besoins */
+    height: 150px;
+}
+    .contenu-footer {
+        width: 320px;
+    }
 
-  .titre {
-    margin-left: 20px;
-  }
+    .bloc {
+        width: 300px;
+        margin: 30px 30px;
+    }
 
-  .contenu-footer {
-    width: 320px;
-  }
+    .bloc:nth-child(1) {
+        margin-top: 0;
+    }
 
-  .bloc {
-    width: 300px;
-    margin: 30px 30px;
-  }
+    nav li:nth-child(1) {
+        font-size: 15px;
+    }
 
-  .bloc:nth-child(1),
-  .bloc:nth-child(2) {
-    margin-bottom: 30px;
-  }
-
-  .bloc:nth-child(1) {
-    margin-top: 0;
-  }
-
-  nav li:nth-child(1) {
-    font-size: 15px;
-  }
-
-  nav li:nth-child(2) {
-    font-size: 11px;
-  }
-
-  .horaire {
-    font-size: 20px;
-    margin-left: 1vw;
-  }
+    nav li:nth-child(2) {
+        font-size: 11px;
+    }
+    
+    .jour {
+        font-size: 20px;
+        margin-left: 0;
+    }
+    .horaire {
+        font-size: 20px;
+    }
 }
