@@ -149,21 +149,23 @@ h3 {
 }
 
 .jour {
-    padding: 20px;
     border: 3px solid #7f3b1e;
     text-align: center;
     background: #bf7839;
     border-radius: 20px;
-    margin-bottom: 30px; /* Ajout d'un espace entre les jours */
+	  padding-top: 20px;
+	  padding-bottom: 20px;
+    margin-bottom: 30px; /* Ajout d'un espace entre les lignes */
 }
 
 .horaire-info {
-    padding: 20px;
     border: 3px solid #7f3b1e;
     text-align: center;
     background: #ceffce; /* Fond par défaut */
     border-radius: 20px;
-    margin-bottom: 30px; /* Ajout d'un espace entre les jours */
+	  padding-top: 20px;
+	  padding-bottom: 20px;
+	  margin-bottom: 30px; /* Ajout d'un espace entre les lignes */
 }
 
 /* Classe pour le fond rouge */
@@ -258,10 +260,9 @@ footer {
     }
     
     .jour {
-        font-size: 20px;
-        margin-left: 0;
+        font-size: 18px;
     }
     .horaire {
-        font-size: 20px;
+        font-size: 18px;
     }
 }
