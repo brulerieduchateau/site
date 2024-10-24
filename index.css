@@ -231,6 +231,9 @@ footer {
     .bloc:nth-child(2) {
         margin-bottom: 50px;
     }
+    .horaire {
+        font-size: 24px;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -260,6 +263,6 @@ footer {
     }
     
     .horaire {
-        font-size: 12px;
+        font-size: 15px;
     }
 }
