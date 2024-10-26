@@ -112,17 +112,6 @@ h3 {
     font-weight: bolder;
 }
 
-/* *************** INFO IMPORTANTE ******************* */
-.infoimportante {
-    background-color: #ff0000;
-    padding: 30px 0;
-    width: 100%;
-    text-align: center;
-    font-size: calc(70 * var(--res));
-    font-weight: bolder;
-    line-height: 100px;
-}
-
 /* *************** info ouverture ******************** */
 .infoouverture {
     background-color: #d99d55;
@@ -253,4 +242,58 @@ footer {
     .horaire {
         font-size: 15px;
     }
+}
+
+/* Style pour la pop-up */
+#popup {
+    display: none; /* Cacher par défaut */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f9f9f9; /* Couleur de fond moderne */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    z-index: 1000;
+    width: 300px; /* Largeur fixe pour uniformité */
+    text-align: center; /* Centrer le texte */
+}
+
+#popup h2 {
+    margin: 0 0 15px;
+    font-size: 1.5em;
+    color: #4a4a4a; /* Couleur de texte moderne */
+}
+
+#popup p {
+    margin: 0 0 20px;
+    font-size: 1em;
+    color: #666; /* Texte plus clair */
+}
+
+#popup button {
+    background-color: #6c63ff; /* Couleur de bouton moderne */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+#popup button:hover {
+    background-color: #5752d1; /* Couleur au survol */
+}
+
+#overlay {
+    display: none; /* Cacher par défaut */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Assombrir légèrement le fond */
+    z-index: 999;
 }
