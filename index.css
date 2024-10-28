@@ -164,7 +164,7 @@ h3 {
 .avis-jours-feries {
     text-align: center;
     width: 100%;
-    font-size: calc(50 * var(--res));
+    font-size: calc(45 * var(--res));
     font-weight: bolder;
 }
 
