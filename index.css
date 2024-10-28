@@ -38,16 +38,16 @@ nav {
     height: 60px;
     border-bottom: 1px solid #fffae1;
     display: flex;
-    justify-content: space-between; /* Espacer les éléments */
+    justify-content: space-between; /* Espacer les �l�ments */
     align-items: center; /* Centrer verticalement */
     padding: 0 20px; /* Espacement horizontal */
 }
 
 nav ul {
-    display: flex; /* Flex pour aligner les éléments de la liste */
-    justify-content: space-between; /* Espacement entre les éléments */
+    display: flex; /* Flex pour aligner les �l�ments de la liste */
+    justify-content: space-between; /* Espacement entre les �l�ments */
     width: 100%; /* S'assurer que la liste occupe toute la largeur */
-    padding: 0; /* Enlever le padding par défaut */
+    padding: 0; /* Enlever le padding par d�faut */
 }
 
 nav li {
@@ -159,6 +159,13 @@ h3 {
 /* Classe pour le fond rouge */
 .red-background {
     background: #ffcccc; /* Rouge clair pour le fond */
+}
+
+.avis-jours-feries {
+    text-align: center;
+    width: 100%;
+    font-size: calc(50 * var(--res));
+    font-weight: bolder;
 }
 
 /* ******************* FOOTER ******************** */

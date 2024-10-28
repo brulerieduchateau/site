@@ -8,5 +8,5 @@ function closePopup() {
     document.getElementById('popup').style.display = 'none';
 }
 
-// Affichez la pop-up à l'ouverture de la page (commenter si non souhaité)
-//window.onload = showPopup; // Décommentez cette ligne si vous souhaitez afficher la pop-up automatiquement
+// Affichez la pop-up ï¿½ l'ouverture de la page (commenter si non souhaitï¿½)
+//window.onload = showPopup; // Dï¿½commentez cette ligne si vous souhaitez afficher la pop-up automatiquement
