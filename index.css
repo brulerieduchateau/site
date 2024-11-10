@@ -253,7 +253,7 @@ footer {
     }
 
     nav li a {
-        font-size: 0.7rem; /* Réduction de la taille du texte sur petits écrans */
+        font-size: 10px; /* Réduction de la taille du texte sur petits écrans */
         padding: 0 10px; /* Ajustement du padding pour les petits écrans */
     }
 
