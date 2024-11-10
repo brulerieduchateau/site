@@ -238,7 +238,7 @@ footer {
 @media screen and (max-width: 800px) {
     .contenu-footer {
         grid-template-columns: 1fr; /* Une colonne pour les petits écrans */
-        padding: 30px 10px; 
+        padding: 0px 0px; 
         text-align: center; /* Centrer le texte dans le footer */
     }
 
@@ -252,8 +252,13 @@ footer {
         font-size: 25px; /* Ajuster la taille des titres */
     }
 
+    iframe {
+        width: 300px; /* Redimensionne à 300px sur mobile */
+        height: auto; /* Laisse la hauteur s'ajuster automatiquement */
+    }
+
     nav li a {
-        font-size: 10px; /* Réduction de la taille du texte sur petits écrans */
+        font-size: 11px; /* Réduction de la taille du texte sur petits écrans */
         padding: 0 10px; /* Ajustement du padding pour les petits écrans */
     }
 
@@ -265,6 +270,7 @@ footer {
         display: flex;
         justify-content: center;
     }
+    
     .img {
         display: none;
     }
