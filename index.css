@@ -115,12 +115,12 @@ h3 {
 /* *************** INFO IMPORTANTE ******************* */
 .infoimportante {
     background-color: #FFFF00;
-    padding: 30px 0;
+    padding: 20px 0;
     width: 100%;
     text-align: center;
     font-size: calc(70 * var(--res));
     font-weight: bolder;
-    line-height: 100px;
+    line-height: 70px;
 }
 
 /* *************** info ouverture ******************** */
@@ -274,4 +274,8 @@ footer {
     .img {
         display: none;
     }
+    .infoimportante {
+    	  padding: 10px 0;
+        line-height: 60px;
+  }
 }
